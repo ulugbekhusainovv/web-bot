@@ -46,9 +46,8 @@ export default function Card(props) {
         {count === 0 && (
           <Button title={"Add"} type={"add"} onClick={handleIncrement} />
         )}
-
         {count !== 0 && (
-          <Button title={"+"} type={"add"} onClick={handleDecrement} />
+          <Button title={"+"} type={"add"} onClick={handleIncrement} />
         )}
         {count !== 0 && (
           <Button title={"-"} type={"remove"} onClick={handleDecrement} />
