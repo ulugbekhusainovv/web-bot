@@ -43,7 +43,13 @@ export default function Card(props) {
       <div className="hr"></div>
 
       <div className="btn__container">
-        <Button title={"+"} type={"add"} onClick={handleIncrement} />
+        {count === 0 && (
+          <Button title={"Add"} type={"add"} onClick={handleIncrement} />
+        )}
+
+        {count !== 0 && (
+          <Button title={"+"} type={"add"} onClick={handleDecrement} />
+        )}
         {count !== 0 && (
           <Button title={"-"} type={"remove"} onClick={handleDecrement} />
         )}

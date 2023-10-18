@@ -3,6 +3,7 @@
 }
 
 .btn {
+  user-select: none;
   padding: 1rem 0.8rem;
   font-size: 20px;
   text-align: center;
